@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI/UX Design Services | Sydney & Newcastle | Medifocal</title>
+  <meta name="description" content="Professional UI/UX design services in Sydney and Newcastle. Create intuitive, user-friendly interfaces that convert visitors into customers. Mobile-first, conversion-focused design.">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.medifocalmarketing.com/ui-ux">
+  <meta name="keywords" content="UI design Sydney, UX design Newcastle, user interface design, user experience design, mobile app design, web design Sydney">
+  <meta property="og:title" content="UI/UX Design Services | Sydney & Newcastle | Medifocal">
+  <meta property="og:description" content="Professional UI/UX design services in Sydney and Newcastle. Create intuitive, user-friendly interfaces that convert visitors into customers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.medifocalmarketing.com/ui-ux">
+  <meta name="google-site-verification" content="zXCqsBo-am05DJr4nrfuRWajuYKztxLykdwdMvFceLM" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Inter,Segoe UI,Arial' font-size='36' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Styles */
+    .header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #1e3a8a;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: #1e3a8a;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Services Section */
+    .services {
+      padding: 80px 0;
+      background: #f8fafc;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #1e293b;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+
+    .service-card p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1e293b;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="logo">Medifocal Marketing</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/ui-ux">UI/UX Design</a></li>
+        <li><a href="/seo">SEO Services</a></li>
+        <li><a href="/websites">Website Design</a></li>
+        <li><a href="/web-apps">Web Applications</a></li>
+        <li><a href="/ecommerce">E-commerce</a></li>
+        <li><a href="/automation">Business Automation</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>UI/UX Design Services</h1>
+      <p>Create intuitive, user-friendly interfaces that convert visitors into customers. Our design process focuses on user experience, accessibility, and conversion optimization for Sydney and Newcastle businesses.</p>
+      <a href="/contact" class="cta-button">Get Started Today</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2>Our UI/UX Design Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>User Research & Analysis</h3>
+          <p>Comprehensive user research to understand your audience, their needs, and pain points. We analyze user behavior to create designs that truly resonate.</p>
+        </div>
+        <div class="service-card">
+          <h3>Wireframing & Prototyping</h3>
+          <p>Create detailed wireframes and interactive prototypes to test and refine your user experience before development begins.</p>
+        </div>
+        <div class="service-card">
+          <h3>Visual Design & Branding</h3>
+          <p>Beautiful, cohesive visual designs that reflect your brand identity and create memorable user experiences.</p>
+        </div>
+        <div class="service-card">
+          <h3>Usability Testing</h3>
+          <p>Test your designs with real users to identify issues and optimize for better conversion rates and user satisfaction.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mobile-First Design</h3>
+          <p>Responsive designs that work perfectly across all devices, with mobile-first approach for optimal performance.</p>
+        </div>
+        <div class="service-card">
+          <h3>Accessibility Design</h3>
+          <p>Inclusive designs that are accessible to all users, meeting WCAG guidelines and improving user experience for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Medifocal Marketing. All rights reserved.</p>
+      <p>Web Design, SEO & Digital Marketing Services in Sydney & Newcastle</p>
+    </div>
+  </footer>
+</body>
+</html>

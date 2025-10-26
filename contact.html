@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Sydney & Newcastle | Medifocal</title>
+  <meta name="description" content="Contact Medifocal Marketing for web design, SEO, and digital marketing services in Sydney and Newcastle. Get a free consultation for your business needs.">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.medifocalmarketing.com/contact">
+  <meta name="keywords" content="contact web design Sydney, contact SEO Newcastle, digital marketing consultation, web design quote Sydney">
+  <meta property="og:title" content="Contact Us | Sydney & Newcastle | Medifocal">
+  <meta property="og:description" content="Contact Medifocal Marketing for web design, SEO, and digital marketing services in Sydney and Newcastle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.medifocalmarketing.com/contact">
+  <meta name="google-site-verification" content="zXCqsBo-am05DJr4nrfuRWajuYKztxLykdwdMvFceLM" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'%3E%3C/rect%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Inter,Segoe UI,Arial' font-size='36' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Styles */
+    .header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #1e3a8a;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 80px 0;
+      background: #f8fafc;
+    }
+
+    .contact h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #1e293b;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #1e3a8a;
+    }
+
+    .form-group textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Contact Info */
+    .contact-info {
+      padding: 80px 0;
+      background: white;
+    }
+
+    .contact-info h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #1e293b;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .contact-card {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 12px;
+      background: #f8fafc;
+    }
+
+    .contact-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+
+    .contact-card p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1e293b;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="logo">Medifocal Marketing</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/ui-ux">UI/UX Design</a></li>
+        <li><a href="/seo">SEO Services</a></li>
+        <li><a href="/websites">Website Design</a></li>
+        <li><a href="/web-apps">Web Applications</a></li>
+        <li><a href="/ecommerce">E-commerce</a></li>
+        <li><a href="/automation">Business Automation</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Ready to transform your business with expert digital solutions? Get in touch with our team in Sydney and Newcastle for a free consultation.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="web-design">Web Design</option>
+            <option value="seo">SEO Services</option>
+            <option value="ecommerce">E-commerce Development</option>
+            <option value="ui-ux">UI/UX Design</option>
+            <option value="automation">Business Automation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="contact-info">
+    <div class="container">
+      <h2>Contact Information</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>admin@medifocalmarketing.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>+61 (0) 2 1234 5678</p>
+        </div>
+        <div class="contact-card">
+          <h3>Areas Served</h3>
+          <p>Sydney, Newcastle, NSW, Australia</p>
+        </div>
+        <div class="contact-card">
+          <h3>Response Time</h3>
+          <p>We respond within 24 hours</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Medifocal Marketing. All rights reserved.</p>
+      <p>Web Design, SEO & Digital Marketing Services in Sydney & Newcastle</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Contact form handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Simple form validation
+      if (!data.name || !data.email || !data.message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Here you would typically send the data to your server
+      // For now, we'll just show a success message
+      alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
